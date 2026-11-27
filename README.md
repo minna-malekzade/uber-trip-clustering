@@ -80,12 +80,91 @@ controlled comparison of all algorithms.
 
 ```text
 uber-trip-clustering/
-├── data/
+├── data/                    # Local dataset (not tracked)
 │   └── uber-data2.csv
+├── images/
+│   ├── hourly-trips.png
+│   ├── daily-trips.png
+│   ├── kmeans-clusters.png
+│   └── silhouette-score.png
 ├── notebooks/
 │   └── uber-trips-clustering-final.ipynb
-└── README.md
+├── .gitignore
+├── README.md
+└── requirements.txt
 ```
+
+## Getting Started
+
+### 1. Prerequisites
+
+- Python 3
+- Git
+- Jupyter Notebook
+
+### 2. Clone the Repository
+
+```bash
+git clone https://github.com/minna-malekzade/uber-trip-clustering.git
+cd uber-trip-clustering
+```
+
+### 3. Create a Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+Activate the environment on Windows (PowerShell):
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+On macOS or Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+### 4. Install Dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 5. Prepare the Dataset
+
+The dataset is not included in this repository.
+
+Obtain an authorized copy of the original dataset,
+create a directory named `data`, and place the CSV file
+inside it using the following path:
+
+```text
+data/uber-data2.csv
+```
+
+### 6. Run the Notebook
+
+```bash
+jupyter notebook
+```
+
+Open the following notebook:
+
+```text
+notebooks/uber-trips-clustering-final.ipynb
+```
+
+Run the cells sequentially to perform data preprocessing,
+exploratory data analysis, clustering, and evaluation.
+
+### Reproducibility Note
+
+The reported results are based on saved notebook outputs.
+Full reproducibility and exact dependency versions have
+not yet been independently verified.
 
 ## Results and Visualizations
 

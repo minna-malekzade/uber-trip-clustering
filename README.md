@@ -87,6 +87,37 @@ uber-trip-clustering/
 └── README.md
 ```
 
+## Results and Visualizations
+
+### 1. Hourly Trip Distribution
+
+Distribution of Uber trips across different hours of the day.
+
+![Hourly Trip Distribution](images/hourly-trips.png)
+
+### 2. Daily Trip Distribution
+
+Distribution of Uber trips across days of the month.
+
+![Daily Trip Distribution](images/daily-trips.png)
+
+### 3. K-Means Clustering
+
+Geographical clustering of Uber trips using latitude and longitude
+with 10 clusters and their corresponding cluster centers.
+
+![K-Means Clustering](images/kmeans-clusters.png)
+
+### 4. Silhouette Score Analysis
+
+Evaluation of K-Means clustering for different numbers of clusters
+using the Silhouette Score.
+
+![Silhouette Score](images/silhouette-score.png)
+
+
+
+
 ## Future Improvements
 
 - Standardize feature selection across clustering algorithms.

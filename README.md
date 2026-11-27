@@ -1,5 +1,13 @@
 # Uber Trip Clustering
 
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Scientific_Computing-4D77CF?logo=numpy&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-Unsupervised-238636)
+
+
 ## Project Overview
 
 This project explores Uber trip patterns using unsupervised

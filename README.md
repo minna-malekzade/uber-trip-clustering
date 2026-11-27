@@ -115,6 +115,39 @@ using the Silhouette Score.
 
 ![Silhouette Score](images/silhouette-score.png)
 
+## Experimental Results
+
+Clustering performance was evaluated using the Silhouette Score.
+
+| Algorithm | Configuration | Silhouette Score |
+|-----------|---------------|-----------------:|
+| K-Means | k = 4 | Not explicitly reported |
+| DBSCAN | eps = 2.5, min_samples = 6 | 0.3212 |
+| DBSCAN (Tuned) | eps = 2.2, min_samples = 4 | 0.4108 |
+| Hierarchical (Ward) | k = 4 | 0.4108 |
+| Hierarchical (Average) | k = 4 | 0.4108 |
+| Gaussian Mixture Model | n_components = 4 | 0.4108 |
+| Mean Shift | bandwidth = 2.5 | 0.4108 |
+| Mean Shift (Grid Search) | bandwidth = 2.0 | 0.3151 |
+
+### Key Findings
+
+- K-Means selected four clusters based on Silhouette analysis.
+- DBSCAN parameter tuning increased the recorded Silhouette
+  Score from 0.3212 to 0.4108.
+- Several clustering configurations produced identical
+  recorded Silhouette Scores.
+
+### Experimental Limitations
+
+- Different feature subsets were used across experiments.
+- Identical scores require further validation.
+- DBSCAN noise handling requires further investigation.
+- Mean Shift hyperparameter optimization requires revision.
+- Results represent saved notebook outputs rather than
+  independently reproduced experiments.
+- A controlled comparison is required before identifying
+  the best-performing algorithm.
 
 
 
